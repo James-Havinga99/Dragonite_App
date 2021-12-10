@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dragonite.Hatching_Egg"
+             BackgroundColor="#29AB87">
+
+    <RelativeLayout>
+        <Image Source="egg_background"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"
+               />
+        <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+
+
+        <StackLayout VerticalOptions="Start">
+            <Image VerticalOptions="CenterAndExpand"
+                   Margin="0, 30, 0, 0"
+                   Source="dragonite_logo"/>
+                
+          
+            <Label 
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Center"
+                   Margin="0,440,0,0"
+                   x:Name="tempLabel"/>
+            
+            <ImageButton
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    WidthRequest="160"
+                    BackgroundColor="Transparent"
+                    Source="heat_egg"
+                    Margin="0, 0, 0, 0"
+                    Clicked="WarmEgg"/>
+
+        </StackLayout>
+  
+
+
+
+
+             </Grid>
+
+    </RelativeLayout>
+
+
+
+   
+
+
+
+    
+</ContentPage>
